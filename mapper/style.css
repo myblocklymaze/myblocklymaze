@@ -1,0 +1,234 @@
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+{
+  display: block;
+}
+body
+{
+  line-height: 1;
+}
+ol, ul
+{
+  list-style: none;
+}
+blockquote, q
+{
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+  content: '';
+  content: none;
+}
+table
+{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CUSTOM */
+
+html
+{
+  height: 100%;
+  width: 100%;
+}
+
+body
+{
+  height: 100%;
+  width: 100%;
+}
+
+#toolbar
+{
+  display: block;
+  height: 10%;
+  width: 100%;
+  background: gray;
+}
+
+.page
+{
+  display: inline-block;
+  border: 1px solid black;
+  background: white;
+  padding: 5px;
+  font-family: "Verdana";
+  margin: 8px 4px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+}
+
+.selected
+{
+  color: white;
+  background: black;
+}
+
+#toolbox
+{
+  width: 20%;
+  height: 90%;
+  float: right;
+  background: lightgray;
+}
+
+#toolbox label
+{
+  display: inline-block;
+  margin: 8px;
+  font-family: "Verdana";
+  font-size: 80%;
+}
+
+#toolbox input
+{
+  display: inline-block;
+  margin: 8px;
+  font-family: "Verdana";
+  font-size: 80%;
+}
+
+.page:first-child
+{
+  margin-left: 10px;
+}
+
+#addLevel
+{
+  display: none;
+}
+
+#removeLevel
+{
+  display: none;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+
+#view
+{
+  height: 90%;
+  width: 80%;
+  background: white;
+  float: left;
+  overflow: scroll;
+}
+
+#canvasWrapper
+{
+  display: block;
+  position: relative;
+  margin: 15px 15px 15px 15px;
+}
+
+#bgCanvas
+{
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 2;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#mainCanvas
+{
+  padding-left: 0;
+  padding-right: 0;
+  z-index: 3;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+#logWrapper
+{
+  background: white;
+  line-height: 350px;
+  text-align: center;
+}
+
+#log
+{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
+  color: black;
+  font-family: "Consolas";
+  font-size: 16px;
+}
+
+#buttonSave
+{
+  display: inline-block;
+  border: 1px solid black;
+  background: white;
+  padding: 5px;
+  font-family: "Verdana";
+  margin: 8px 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: right;
+}
+
+#buttonDelete
+{
+  display: inline-block;
+  border: 1px solid black;
+  background: white;
+  padding: 5px;
+  font-family: "Verdana";
+  margin: 8px 4px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: right;
+}
+
+#buttonDraw
+{
+  margin: 8px;
+}
